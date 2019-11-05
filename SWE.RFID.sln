@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWE.RFID", "SWE.RFID\SWE.RFID.csproj", "{4D914C6E-ED05-4984-AE6D-943ADA776932}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWE.RFID.Manager", "SWE.RFID.Service\SWE.RFID.Manager.csproj", "{64A8D19A-7AA0-4061-AB6C-59AC2DE2F91A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SWE.RFID.Entities", "SWE.RFID.Entities\SWE.RFID.Entities.csproj", "{EA871609-DB2B-409D-9006-4B6A00BABE17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D914C6E-ED05-4984-AE6D-943ADA776932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D914C6E-ED05-4984-AE6D-943ADA776932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D914C6E-ED05-4984-AE6D-943ADA776932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D914C6E-ED05-4984-AE6D-943ADA776932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64A8D19A-7AA0-4061-AB6C-59AC2DE2F91A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A8D19A-7AA0-4061-AB6C-59AC2DE2F91A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A8D19A-7AA0-4061-AB6C-59AC2DE2F91A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A8D19A-7AA0-4061-AB6C-59AC2DE2F91A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA871609-DB2B-409D-9006-4B6A00BABE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA871609-DB2B-409D-9006-4B6A00BABE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA871609-DB2B-409D-9006-4B6A00BABE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA871609-DB2B-409D-9006-4B6A00BABE17}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {838FEC8F-E514-442C-92C9-136FF5764B25}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/swe-rfid
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = SWE.RFID\\SWE.RFID.csproj
+		SccProjectName1 = SWE.RFID
+		SccLocalPath1 = SWE.RFID
+		SccProjectUniqueName2 = SWE.RFID.Entities\\SWE.RFID.Entities.csproj
+		SccProjectName2 = SWE.RFID.Entities
+		SccLocalPath2 = SWE.RFID.Entities
+		SccProjectUniqueName3 = SWE.RFID.Service\\SWE.RFID.Manager.csproj
+		SccProjectName3 = SWE.RFID.Service
+		SccLocalPath3 = SWE.RFID.Service
+	EndGlobalSection
+EndGlobal

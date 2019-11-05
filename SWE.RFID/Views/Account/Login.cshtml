@@ -1,0 +1,205 @@
+﻿
+@{
+    Layout = null;
+
+}
+
+<!DOCTYPE html>
+<!-- Template Name: RFID - Responsive Admin Template build with Twitter Bootstrap 3.x | Author: RFID -->
+<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9]><html class="ie9" lang="en"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+<!-- start: HEAD -->
+<!-- start: HEAD -->
+<head>
+    <title>RFID - Responsive Admin Template</title>
+    <!-- start: META -->
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- end: META -->
+    <!-- start: GOOGLE FONTS -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+    <!-- end: GOOGLE FONTS -->
+    <!-- start: MAIN CSS -->
+    <link rel="stylesheet" href="~/content/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/content/vendor/bootstrap/css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="~/content/vendor/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/content/vendor/themify-icons/themify-icons.min.css">
+    <link href="~/content/vendor/animate.css/animate.min.css" rel="stylesheet" media="screen">
+    <link href="~/content/vendor/perfect-scrollbar/perfect-scrollbar.min.css" rel="stylesheet" media="screen">
+    <link href="~/content/vendor/switchery/switchery.min.css" rel="stylesheet" media="screen">
+    <!-- end: MAIN CSS -->
+    <!-- start: RFID CSS -->
+    <link rel="stylesheet" href="~/content/assets/css/plugins.css">
+    <link rel="stylesheet" href="~/content/assets/css/themes/theme-1.css" id="skin_color" />
+        <link rel="stylesheet" href="~/content/assets/css/styles.css">
+    @if (Resources.RFID.locale == "ar")
+    {
+
+        <link rel="stylesheet" href="~/content/assets/css/rtl.css" />
+
+    }
+    else
+    {
+        @*<link rel="stylesheet" href="~/content/assets/css/styles-en.css">*@
+
+    }<!-- end: RFID CSS -->
+    <!-- start: CSS REQUIRED FOR THIS PAGE ONLY -->
+    <!-- end: CSS REQUIRED FOR THIS PAGE ONLY -->
+</head>
+<!-- end: HEAD -->
+<!-- start: BODY -->
+<body class="login">
+    <!-- start: LOGIN -->
+    <div class="row">
+        <div class="main-login col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4">
+            <div class="logo margin-top-30">
+                <img src="~/content/assets/images/logo.png" alt="RFID" />
+            </div>
+            <!-- start: LOGIN BOX -->
+            <div class="box-login">
+                <form id="formLogin" class="form-login" method="post" action="/account/login">
+                    <fieldset>
+                        <legend>
+                            @Resources.RFID.signin
+                        </legend>
+                        <p>
+                            @Resources.RFID.pleaseenterpassword .
+                        </p>
+                        <div class="form-group">
+                            <span class="input-icon">
+                                <input type="text" class="form-control" name="username" placeholder="@Resources.RFID.username">
+                                <i class="fa fa-user"></i>
+                            </span>
+                        </div>
+                        <div class="form-group form-actions">
+                            <span class="input-icon">
+                                <input type="password" class="form-control password" name="password" placeholder="@Resources.RFID.password">
+                                <i class="fa fa-lock"></i>
+                                <a id="btnForget" class="forgot" role="button">
+                                    @Resources.RFID.iforgetmypassword  
+                                </a>
+                            </span>
+                        </div>
+                        <div class="form-actions">
+
+
+                            <button type="submit" class="btn btn-primary pull-right">
+                                @Resources.RFID.login <i class="fa fa-arrow-circle-right"></i>
+                            </button>
+                            <br />
+                            @if (ViewBag.Error != null)
+                            {
+
+                                <label class="alert alert-danger">@ViewBag.Error</label>
+                            }
+                        </div>
+
+
+                    </fieldset>
+                </form>
+
+                <form id="formForget" class="form-forgot">
+                    <fieldset>
+                        <legend>
+                            Forget Password?
+                        </legend>
+                        <p>
+                            Enter your e-mail address below to reset your password.
+                        </p>
+                        <div class="form-group">
+                            <span class="input-icon">
+                                <input type="email" class="form-control" name="email" placeholder="Email">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </div>
+                        <div class="form-actions">
+                            <a class="btn btn-primary btn-o" role="button" id="btnBackLogin">
+                                <i class="fa fa-chevron-circle-left"></i> Log-In
+                            </a>
+                            <button type="submit" class="btn btn-primary pull-right">
+                                Submit <i class="fa fa-arrow-circle-right"></i>
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="form-actions">
+                    <select id="ddlLanguageSwitcher">
+                        <option value="-1">--- @Resources.RFID.selectLanguage ---</option>
+                        <option value="ar">عربى</option>
+                        <option value="en">English</option>
+
+                    </select>
+
+
+
+                </div>
+                <!-- start: COPYRIGHT -->
+                <div class="copyright">
+                    &copy; <span class="current-year"></span><span class="text-bold text-uppercase"> RFID</span>. <span>All rights reserved</span>
+                </div>
+                <!-- end: COPYRIGHT -->
+            </div>
+            <!-- end: LOGIN BOX -->
+        </div>
+    </div>
+    <!-- end: LOGIN -->
+    <!-- start: MAIN JAVASCRIPTS -->
+    <script src="~/content/vendor/jquery/jquery.min.js"></script>
+    <script src="~/content/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/content/vendor/modernizr/modernizr.js"></script>
+    <script src="~/content/vendor/jquery-cookie/jquery.cookie.js"></script>
+    <script src="~/content/vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="~/content/vendor/switchery/switchery.min.js"></script>
+    <!-- end: MAIN JAVASCRIPTS -->
+    <!-- start: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+    <script src="~/content/vendor/jquery-validation/jquery.validate.min.js"></script>
+    <!-- end: JAVASCRIPTS REQUIRED FOR THIS PAGE ONLY -->
+    <!-- start: RFID JAVASCRIPTS -->
+    <script src="~/content/assets/js/main.js"></script>
+    <!-- start: JavaScript Event Handlers for this page -->
+    <script src="~/content/assets/js/login.js"></script>
+    <script>
+			jQuery(document).ready(function() {
+				Main.init();
+                Login.init();
+                $("#formForget").hide();
+                $("#ddlLanguageSwitcher").change(function () {
+                    if ($(this).val() == "ar") {
+                        document.location.href = "/account/change?id=ar-eg&currenturl=" + document.location.href;
+                    } else if ($(this).val() == "en") {
+                        document.location.href = "/account/change?id=en-us&currenturl=" + document.location.href;
+
+                    } else {
+
+                    }
+                })
+
+                $("#btnForget").click(function () {
+                    $("#formForget").show();
+                    $("#formLogin").hide();
+
+
+                });
+                $("#btnBackLogin").click(function () {
+                    $("#formLogin").show();
+                    $("#formForget").hide();
+
+
+                });
+                
+        });
+
+    </script>
+    <!-- end: JavaScript Event Handlers for this page -->
+    <!-- end: RFID JAVASCRIPTS -->
+</body>
+<!-- end: BODY -->
+</html>
